@@ -3,22 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bootstrap demo</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 </head>
 <body>
-   <header>
-    <img src="img/logo.png" alt="logo" width="50" height="50">
-    <h2>Skin&Care</h2>
+ <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid align-items-center">
     
+    
+    <div class="d-flex flex-column align-items-center me-3">
+      <img src="img/logo.png" alt="logo" width="45" height="45" class="object-fit-contain">
+      <span class="navbar-brand m-0 p-0 fs-6 fw-bold">Skin&Care</span>
+    </div>
 
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Головна</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Доглядова косметика</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">Декоративна косметика</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Гігієна
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Гелі для душу</a></li>
+            <li><a class="dropdown-item" href="#">Шампуні</a></li>
+            
+          </ul>
+        </li>
+      </ul>
 
-   </header>
+   
+      <div class="d-flex align-items-center gap-3">
+        <form class="d-flex mb-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="Пошук🔍" aria-label="Search"/>
+          <button class="btn btn-outline-success" type="submit">Пошук</button>
+        </form>
 
+        
+        <a class="cart-icon text-light fs-4 text-decoration-none" href="cart.html">
+          <i class="ti ti-shopping-cart"></i>
+        </a>
+      </div>
+    </div>
 
-    <a class="cart-icon" href="cart.html"><i class="ti ti-shopping-cart"></i></a>
+  </div>
+</nav>
+</header>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   
     <script src="script.js"></script>
 </body>
 </html>
