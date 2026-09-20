@@ -7,3 +7,10 @@ header{
 .cart-icon{
     text-decoration: none;
 }
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
