@@ -1,6 +1,9 @@
 header{
     background-color: #F7F2EB;
 }
+body{
+    background-color: #f3e1c8;
+}
 
 
 
@@ -13,4 +16,25 @@ header{
   flex-wrap: wrap;
   gap: 1.5rem;
   justify-content: center;
+}
+
+.nav-item{
+    margin-right: 1rem;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.text-center{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 23px;
+}
+
+.text {
+    
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
 }

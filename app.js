@@ -77,7 +77,7 @@ function createProductCard(product) {
         </div>
         <div>
           <p class="fw-bold fs-5 text-primary mb-2">${product.price} грн</p>
-          <button onclick="addToCart(${product.id})" type="button" class="btn btn-warning w-100">
+          <button onclick="addToCart(${product.id})" type="button" class="btn btn-outline-success w-100 font-weight-bold">
             В кошик
           </button>
         </div>
