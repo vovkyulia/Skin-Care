@@ -60,9 +60,16 @@ async function fetchData(category = null) {
 function addToCart(productId) {
   const product = products.find(p => p.id === productId);
   if (!product) return;
+  const cartProduct = cart.find(p => p.id === productId);
+  if (cartProduct) {
   cart.push(product);
+  cartProduct.quantity += 1;
+  } else {
+    cart.push({ ...product, quantity: 1 });
+  }
   saveJsonCookie("cart", cart, 3600 * 24 * 7);
   alert(`Товар "${product.name}" додано в кошик!`);
+  console.log("Поточний кошик:", cart); 
 }
 
 // Генерація Картки Товару
